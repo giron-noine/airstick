@@ -106,6 +106,7 @@ const Accelerator: React.FC = () => {
   const loopAONOFF = () => {
     if (!loopA) {
       setLoopA(true);
+      setLoopB(false);
     } else {
       setLoopA(false);
     }
@@ -114,6 +115,7 @@ const Accelerator: React.FC = () => {
   const loopBONOFF = () => {
     if (!loopB) {
       setLoopB(true);
+      setLoopA(false);
     } else {
       setLoopB(false);
     }
